@@ -1,5 +1,6 @@
 import { FC, SVGProps } from 'react'
 
+import AIIcon from '../assets/icons/ai.svg'
 import Earning from '../assets/icons/earning.svg'
 import ExpressjsIcon from '../assets/icons/express.svg'
 import JavaScriptIcon from '../assets/icons/javascript.svg'
@@ -23,7 +24,8 @@ const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 20 19"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         d="M19.25 6.69867C16.94 3.06867 13.56 0.978668 10 0.978668C8.22 0.978668 6.49 1.49867 4.91 2.46867C3.33 3.44867 1.91 4.87867 0.75 6.69867C-0.25 8.26867 -0.25 10.8187 0.75 12.3887C3.06 16.0287 6.44 18.1087 10 18.1087C11.78 18.1087 13.51 17.5887 15.09 16.6187C16.67 15.6387 18.09 14.2087 19.25 12.3887C20.25 10.8287 20.25 8.26867 19.25 6.69867ZM10 13.5887C7.76 13.5887 5.96 11.7787 5.96 9.54867C5.96 7.31867 7.76 5.50867 10 5.50867C12.24 5.50867 14.04 7.31867 14.04 9.54867C14.04 11.7787 12.24 13.5887 10 13.5887Z"
         fill="currentColor"
@@ -40,7 +42,8 @@ const GithubIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -64,7 +67,8 @@ const ArrowLeftIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}>
+      {...props}
+    >
       <line x1="19" y1="12" x2="5" y2="12"></line>
       <polyline points="12 19 5 12 12 5"></polyline>
     </svg>
@@ -84,7 +88,8 @@ const ArrowRightIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}>
+      {...props}
+    >
       <line x1="5" y1="12" x2="19" y2="12"></line>
       <polyline points="12 5 19 12 12 19"></polyline>
     </svg>
@@ -103,7 +108,8 @@ const CheckIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}>
+      {...props}
+    >
       <path d="M20 6 9 17l-5-5" />
     </svg>
   )
@@ -121,7 +127,8 @@ const ChevronRightIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      {...props}>
+      {...props}
+    >
       <polyline points="9 18 15 12 9 6"></polyline>
     </svg>
   )
@@ -135,7 +142,8 @@ const LinkedIn: FC<SVGProps<SVGSVGElement>> = (props) => {
       height={24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <title>LinkedIn</title>
       <path
         fill="currentColor"
@@ -153,7 +161,8 @@ const Codepen: FC<SVGProps<SVGSVGElement>> = (props) => {
       height={24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <title>CodePen</title>
       <path
         fill="currentColor"
@@ -171,7 +180,8 @@ const X: FC<SVGProps<SVGSVGElement>> = (props) => {
       height={24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <title>X</title>
       <path
         fill="currentColor"
@@ -189,7 +199,8 @@ const Instagram: FC<SVGProps<SVGSVGElement>> = (props) => {
       height={24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <title>Instagram</title>
       <path
         fill="currentColor"
@@ -207,7 +218,8 @@ const Facebook: FC<SVGProps<SVGSVGElement>> = (props) => {
       height={24}
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <title>Facebook</title>
       <path
         fill="currentColor"
@@ -225,8 +237,12 @@ const BurgerIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 18 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
-      <path d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z" fill="currentColor" />
+      {...props}
+    >
+      <path
+        d="M0 0H18V2H0V0ZM0 7H18V9H0V7ZM0 14H18V16H0V14Z"
+        fill="currentColor"
+      />
     </svg>
   )
 }
@@ -239,7 +255,8 @@ const CloseIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         d="M8 6.2225L14.2225 0L16 1.7775L9.7775 8L16 14.2225L14.2225 16L8 9.7775L1.7775 16L0 14.2225L6.2225 8L0 1.7775L1.7775 0L8 6.2225Z"
         fill="currentColor"
@@ -256,7 +273,8 @@ const StarIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 20 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         d="M9.10264 3.58103C9.46948 2.83787 10.5292 2.83787 10.8961 3.58103L12.3419 6.51016C12.4874 6.80501 12.7686 7.00947 13.094 7.05702L16.3289 7.52985C17.1488 7.6497 17.4756 8.65754 16.882 9.2357L14.5428 11.5141C14.3069 11.7438 14.1993 12.075 14.2549 12.3995L14.8068 15.617C14.9469 16.434 14.0893 17.057 13.3557 16.6712L10.4648 15.1508C10.1734 14.9976 9.82528 14.9976 9.5339 15.1508L6.64298 16.6712C5.90935 17.057 5.0518 16.434 5.19192 15.617L5.74377 12.3995C5.79943 12.075 5.69177 11.7438 5.45589 11.5141L3.1167 9.2357C2.5231 8.65754 2.84988 7.6497 3.6698 7.52985L6.90472 7.05702C7.23007 7.00947 7.51125 6.80501 7.65679 6.51016L9.10264 3.58103Z"
         stroke="#FFB800"
@@ -276,7 +294,8 @@ const MsgIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         d="M17 3.59741H7C4 3.59741 2 5.09741 2 8.59741V15.5974C2 19.0974 4 20.5974 7 20.5974H17C20 20.5974 22 19.0974 22 15.5974V8.59741C22 5.09741 20 3.59741 17 3.59741ZM17.47 9.68741L14.34 12.1874C13.68 12.7174 12.84 12.9774 12 12.9774C11.16 12.9774 10.31 12.7174 9.66 12.1874L6.53 9.68741C6.21 9.42741 6.16 8.94741 6.41 8.62741C6.67 8.30741 7.14 8.24741 7.46 8.50741L10.59 11.0074C11.35 11.6174 12.64 11.6174 13.4 11.0074L16.53 8.50741C16.85 8.24741 17.33 8.29741 17.58 8.62741C17.84 8.94741 17.79 9.42741 17.47 9.68741Z"
         fill="currentColor"
@@ -293,7 +312,8 @@ const PhoneIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
       viewBox="0 0 24 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <path
         d="M11.05 15.0474L9.2 16.8974C8.81 17.2874 8.19 17.2874 7.79 16.9074C7.68 16.7974 7.57 16.6974 7.46 16.5874C6.43 15.5474 5.5 14.4574 4.67 13.3174C3.85 12.1774 3.19 11.0374 2.71 9.90741C2.24 8.76741 2 7.67741 2 6.63741C2 5.95741 2.12 5.30741 2.36 4.70741C2.6 4.09741 2.98 3.53741 3.51 3.03741C4.15 2.40741 4.85 2.09741 5.59 2.09741C5.87 2.09741 6.15 2.15741 6.4 2.27741C6.66 2.39741 6.89 2.57741 7.07 2.83741L9.39 6.10741C9.57 6.35741 9.7 6.58741 9.79 6.80741C9.88 7.01741 9.93 7.22741 9.93 7.41741C9.93 7.65741 9.86 7.89741 9.72 8.12741C9.59 8.35741 9.4 8.59741 9.16 8.83741L8.4 9.62741C8.29 9.73741 8.24 9.86741 8.24 10.0274C8.24 10.1074 8.25 10.1774 8.27 10.2574C8.3 10.3374 8.33 10.3974 8.35 10.4574C8.53 10.7874 8.84 11.2174 9.28 11.7374C9.73 12.2574 10.21 12.7874 10.73 13.3174C10.83 13.4174 10.94 13.5174 11.04 13.6174C11.44 14.0074 11.45 14.6474 11.05 15.0474Z"
         fill="currentColor"
@@ -307,6 +327,7 @@ const PhoneIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
 }
 
 export {
+  AIIcon,
   ArrowLeftIcon,
   ArrowRightIcon,
   BurgerIcon,

@@ -6,12 +6,15 @@ import Navbar from '@/components/Navbar/Navbar'
 import ThemeMenu from '@/components/Theme/ThemeMenu'
 import { Fira_Code } from 'next/font/google'
 
-const firaCode = Fira_Code({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] })
+const firaCode = Fira_Code({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+})
 
-const title = 'John Doe | Full-Stack Web Developer in Chicago'
+const title = 'Joelson Lopes | Full-Stack Web Developer'
 
 const description =
-  "Skilled full-stack web developer in Chicago. I build responsive, user-friendly websites with React, NextJS, and NodeJS. Let's bring your vision to life. Hire me today!"
+  'Desenvolvedor full-stack especializado em criar soluções web modernas e responsivas. Experiência com React, Next.js, Node.js e outras tecnologias. Transformo ideias em produtos digitais de qualidade.'
 
 const url = process.env.NEXT_PUBLIC_SITE_URL
 
@@ -27,14 +30,14 @@ export const metadata: Metadata = {
     title,
     description,
     url,
-    siteName: 'John Doe Portfolio',
+    siteName: 'Joelson Lopes Portfolio',
     type: 'website',
   },
   twitter: {
     title,
     description,
     card: 'summary_large_image',
-    creator: '@Basit_Miyanji',
+    creator: '@joelsonlopes', // Substitua pelo seu @ do Twitter/X se tiver
   },
 }
 

@@ -8,7 +8,9 @@ const useHeadingsData = () => {
   const [nestedHeadings, setNestedHeadings] = useState<Heading[]>([])
 
   useEffect(() => {
-    const headingElements = Array.from(document.querySelectorAll('main h2, main h3'))
+    const headingElements = Array.from(
+      document.querySelectorAll('main h2, main h3')
+    )
 
     const newNestedHeadings = getNestedHeadings(headingElements)
     setNestedHeadings(newNestedHeadings)

@@ -1,166 +1,179 @@
-# Flexy Dev - Next.js Portfolio Template
+# Portfolio - Joelson Lopes
 
-![](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+[![Next.js](https://img.shields.io/badge/Next.js-15.5.6-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.0.0-61dafb?logo=react)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-![](https://img.shields.io/badge/license-MIT-blue.svg)
+> Portfólio profissional de desenvolvedor full-stack, construído com as tecnologias mais modernas do mercado.
 
-[![Premium Version](https://img.shields.io/badge/PREMIUM_%20VERSION-AVAILABLE-%2300C7B7?style=for-the-badge&logo=stellar&logoColor=white)](https://basit313.gumroad.com/l/nextjs-developer-portfolio-template)
+## 🚀 Sobre o Projeto
 
-✨ **Professional Portfolio Template** built with Next.js 15 • 🚀 Tailwind V4 • 📱 Fully Responsive • 🎨 Modern Design • 🔍 SEO Friendly
+Este é meu portfólio pessoal, onde demonstro minhas habilidades como desenvolvedor full-stack. O site apresenta meus projetos, serviços oferecidos, tecnologias que domino e formas de entrar em contato.
 
-![Next.js Portfolio Template Hero Section](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/Flexy%20Dev%20Cover%20New.png?updatedAt=1741812978958)
+**Destaque especial:** Integração com ferramentas de IA para otimizar o processo de desenvolvimento.
 
-## 🚀 How to Run the Project
+🔗 **[Ver site ao vivo](https://seu-portfolio.vercel.app)** _(em breve)_
 
-Follow these steps to set up and run the project locally:
+## ✨ Funcionalidades
 
-### 1️⃣ Install Dependencies
+- 📱 **Totalmente Responsivo** - Funciona perfeitamente em dispositivos móveis, tablets e desktops
+- 🎨 **4 Temas Personalizáveis** - Light, Dark, Aqua e Retro
+- ⚡ **Performance Otimizada** - Construído com Next.js 15 e Turbopack
+- 🔍 **SEO Friendly** - Otimizado para mecanismos de busca
+- 📬 **Formulário de Contato Funcional** - Integrado com Formspree
+- 🎯 **Animações Suaves** - Experiência de usuário aprimorada
+- 🤖 **Desenvolvido com IA** - Utilizando ferramentas modernas de inteligência artificial
 
-After downloading/cloning the project, navigate to the project directory and run:
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-npm install
-# or
-yarn install
+### Core
+
+- **[Next.js 15.5.6](https://nextjs.org/)** - Framework React com App Router e Turbopack
+- **[React 19](https://react.dev/)** - Biblioteca JavaScript para interfaces
+- **[TypeScript 5](https://www.typescriptlang.org/)** - Superset tipado de JavaScript
+
+### Styling
+
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework CSS utilitário
+- **Tailwind Animate** - Animações CSS com Tailwind
+
+### Integrações
+
+- **[Formspree](https://formspree.io/)** - Serviço para processamento de formulários
+- **[Lucide Icons](https://lucide.dev/)** - Biblioteca de ícones moderna
+
+### Ferramentas de Desenvolvimento
+
+- **ESLint** - Linting de código
+- **PostCSS** - Processamento de CSS
+- **Git** - Controle de versão
+
+## 📦 Instalação e Uso
+
+### Pré-requisitos
+
+- Node.js 18+ instalado
+- npm ou yarn
+
+### Passos para executar localmente
+
+1. **Clone o repositório**
+
+   ```bash
+   git clone https://github.com/JoelsonLopes/portfolio-joelson-lopes.git
+   cd portfolio-joelson-lopes
+   ```
+
+2. **Instale as dependências**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure as variáveis de ambiente**
+
+   Crie um arquivo `.env.local` na raiz do projeto:
+
+   ```env
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   CONTACT_FORM_ACTION_URL=https://formspree.io/f/seu-form-id
+   ```
+
+4. **Inicie o servidor de desenvolvimento**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Acesse no navegador**
+   ```
+   http://localhost:3000
+   ```
+
+## 📁 Estrutura do Projeto
+
+```
+portfolio-joelson-lopes/
+├── src/
+│   ├── app/                  # App Router do Next.js
+│   │   ├── layout.tsx        # Layout principal e metadata SEO
+│   │   └── page.tsx          # Página inicial
+│   ├── components/           # Componentes React
+│   │   ├── Hero/            # Seção de apresentação
+│   │   ├── Navbar/          # Barra de navegação
+│   │   ├── Projects/        # Seção de projetos
+│   │   ├── Services/        # Seção de serviços
+│   │   ├── Skills/          # Seção de habilidades
+│   │   ├── Contact/         # Seção de contato
+│   │   ├── Footer/          # Rodapé
+│   │   └── Theme/           # Seletor de temas
+│   ├── appData/             # Dados do aplicativo (serviços, skills)
+│   ├── actions/             # Server Actions
+│   ├── assets/              # Imagens e ícones
+│   ├── hooks/               # Custom React Hooks
+│   ├── services/            # Serviços (leitura de dados)
+│   └── utils/               # Funções utilitárias
+├── content/                 # Conteúdo JSON
+│   ├── projects/           # Dados dos projetos
+│   └── testimonials/       # Dados de depoimentos
+└── public/                 # Arquivos estáticos
 ```
 
-This will install all required dependencies.
+## 🎨 Personalização
 
-### 2️⃣ Start the Development Server
+### Alterar Temas
 
-Once the installation is complete, start the server with:
+Os temas são configurados em `src/app/globals.css`. Você pode adicionar novos temas ou modificar os existentes alterando as variáveis CSS em cada seção `[data-theme="..."]`.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Adicionar Projetos
 
-Your portfolio will now be running at `http://localhost:3000`.
+Adicione arquivos JSON em `content/projects/` seguindo o padrão dos projetos existentes.
 
-### ⚠️ Important: Set Up Environment Variables
+### Modificar Serviços/Skills
 
-Before running the project, make sure to create a `.env.local` file in the root directory and add the following:
+Edite o arquivo `src/appData/index.ts` para atualizar serviços e habilidades.
 
-```env
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-```
+## 🌐 Deploy
 
-This ensures proper configuration of environment variables.
+### Vercel (Recomendado)
 
-## Folder Structure Overview
+1. Faça push do código para o GitHub
+2. Conecte seu repositório no [Vercel](https://vercel.com)
+3. Configure as variáveis de ambiente:
+   - `NEXT_PUBLIC_SITE_URL`: URL do seu site
+   - `CONTACT_FORM_ACTION_URL`: URL do Formspree
+4. Deploy automático!
 
-![Next.js portfolio template folder structure overview](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/Folder%20Structure%20Overview.png?updatedAt=1741684501824)
+### Outras Plataformas
 
-- **content:** Contains data for projects. Add any additional section data here.
-- **Components:** All the UI components of app e.g. navbar, hero, projects, footer etc
-- **src/services:** Retrieves data (e.g., projects, testimonials) using the fs module. Update this file if you change or modify the data source.
-- **src/assets:** Stores all assets, including images and icons, additionally you can add audio, video, and local fonts here.
-- **src/hooks:** Holds custom hooks.
-- **src/lib/types.d.ts:** Contains TypeScript types.
-- **util/icons:** Centralizes icons and images for easy updates.
-- **appData:** Includes app data, such as services and skills (including icons).
-- **app/page.tsx:** Root file of the app.
-- **app/layout.tsx:** Manages global and SEO configurations (e.g., fonts, head tags, analytics).
+O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
 
-## Customizing the Template
+- Netlify
+- AWS Amplify
+- Railway
+- Render
 
-1. Navbar
-   - File: navbar.tsx
-     - Update the navbar name from john_doe to your name.
-2. Hero Section
-   - File: hero.tsx
-     - Edit the title, description, and optionally, replace the SVG with your image.
-3. Projects Section
-   - File: content/projects
-     - Replace the dummy projects with your own.
-     - If you are modifying the properties or going to add new ones, then update types in types.d.ts.
-4. Services Section
-   - File: appData
-     - Add your services with relevant icons. If icons are missing, contact me on LinkedIn or via email.
-5. Skills Section
-   - File: appData
-     - Add your skills with relevant icons. Contact if you can’t find specific icons online.
-6. Footer
-   - Location: Visit [Flexy UI](http://flexyui.com/)
-     - You can replace the default footer or choose from additional variants [from Flexy UI](http://flexyui.com/) (simple or column footer).
+## 📧 Contato
 
-In the same manner, you can also update the Contact and Testimonial sections. The code is self-explanatory.
+**Joelson Lopes** - Desenvolvedor Full-Stack
 
-![Project section](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/flexy-dev-portfolio-portfolio.png?updatedAt=1739182152345)
+- 🌐 Portfolio: [em breve]
+- 💼 LinkedIn: [linkedin.com/in/joelson-lopes](https://www.linkedin.com/in/joelson-lopes)
+- 📧 Email: seu-email@exemplo.com
+- 📍 Localização: Brasil (Disponível para trabalho remoto)
 
-## 📨 Configuring the Contact Section
+## 📄 Licença
 
-To integrate **Formspree** into your contact form, follow these simple steps:
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-1. Go to the [Formspree website](https://formspree.io/) and create a new project.
-2. Add a new form (you'll get a unique form endpoint URL).
-3. Copy the form endpoint and paste it into your `.env.local` file like this:
+## 🙏 Agradecimentos
 
-```env
-CONTACT_FORM_ACTION_URL=https://formspree.io/f/your-form-id
-```
+Template base desenvolvido por [Abdul Basit](https://github.com/AbdulBasit313/nextjs-portfolio-template), personalizado e adaptado com minhas informações e melhorias.
 
-> Note: This URL is just an endpoint to receive your form submissions. You can use any service of your choice (like Formcarry, Getform, or your own API) if you're not using Formspree.
+---
 
-Make sure the name attributes in your form match what your form handler or service expects (e.g., `name`, `email`, `subject`, `message`).
+**Desenvolvido com ❤️ e ☕ por Joelson Lopes**
 
-## Configuring Online Images
-
-To display online images (e.g., from a CDN) in your deployed project, configure allowed image hostnames in next.config.js.
-
-For demo purposes, we’re using Unsplash images. You can use any image host, but be sure to add the hostname in your configuration.
-
-Replace 'unsplash' with your own image `hostnames` if using a different service or add a new object.
-
-## Theming and Styling
-
-We use Tailwind CSS for styling. In `global.css`, you can customize theme variables for all 3 themes.
-
-## SEO & Branding
-
-1. Favicon: Replace the default favicon with your own.
-2. Metadata: Update meta title and description in layout.tsx.
-3. SEO Files: robots.ts and sitemap.ts are included for search engines.
-4. Open Graph Images:
-   - Replace `opengraph-image.png` and `twitter-image.png `with custom images.
-   - Alternatively, edit `opengraph-image.tsx` to generate images dynamically.
-
-### If you find this template helpful, don't forget to ⭐️ the repo!
-
-## 💎 Upgrade to Premium
-
-✨ **Premium Features Include:**
-
-In premium template you will get one extra feature
-
-- 📝 MDX Blog System with code snippets
-
-[Get Premium Version](https://basit313.gumroad.com/l/nextjs-developer-portfolio-template) | [View Premium Demo](https://nextjs-dev-portfolio.netlify.app/)
-
-## 🆓 vs 💎 Premium
-
-| **Feature**       | **Free Version** | **Premium Version** |
-| ----------------- | ---------------- | ------------------- |
-| Blog System (MDX) | ❌               | ✅ Full Integration |
-| UI Components     | 20               | 25+                 |
-| Email Support     | ✅               | ✅ Priority         |
-
-![footer section](https://ik.imagekit.io/cpnw7c0xpe/Tailwind%20Components/Templates/flexy-dev-footer.png?updatedAt=1741813601842)
-
-## Analytics
-
-You can integrate analytics easily:
-
-1. Simple Analytics or Vercel Analytics: Quick and easy to set up.
-2. Google Analytics 4: Also straightforward.
-
-## Deployment Notes
-
-Before deploying, add environment variables from .env.local wherever you are deploying:
-
-1. NEXT_PUBLIC_SITE_URL: Set to your actual site URL (e.g., https://johndoe.com).
-1. CONTACT_FORM_ACTION_URL: Your [formspree](https://formspree.io/) url.
-1. For local development, use the localhost URL.
-
-For any query or suggestion, I am available on [LinkedIn](https://www.linkedin.com/in/abdulbasitprofile/) or email me at basit@codevertiser.com
+_Utilizando ferramentas de IA para otimizar o desenvolvimento_

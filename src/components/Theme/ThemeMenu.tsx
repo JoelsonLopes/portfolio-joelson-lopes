@@ -26,10 +26,14 @@ const ThemeMenu = () => {
   }
 
   return (
-    <div ref={menuRef} className="fixed right-6 bottom-4 z-50 md:right-11 md:bottom-11">
+    <div
+      ref={menuRef}
+      className="fixed right-6 bottom-4 z-50 md:right-11 md:bottom-11"
+    >
       <div
         onClick={() => setShowThemeMenu(!showThemeMenu)}
-        className="bg-neutral cursor-pointer rounded-full p-1.5 md:p-2">
+        className="bg-neutral cursor-pointer rounded-full p-1.5 md:p-2"
+      >
         <div className="bg-primary grid grid-cols-2 place-content-center gap-0.5 rounded-full p-1.5 md:p-2">
           <div className="size-[7px] rounded-t-full rounded-bl-full bg-[#B13753] md:size-[10px]"></div>
           <div className="size-[7px] rounded-t-full rounded-br-full bg-[#BAA32B] md:size-[10px]"></div>
@@ -53,9 +57,12 @@ const ThemeMenu = () => {
               key={name}
               onClick={() => changeTheme(name.toLowerCase())}
               style={{ background: colors[0], color: colors[1] }}
-              className="flex min-w-48 cursor-pointer items-center justify-between rounded-lg p-2 md:min-w-60 md:rounded-xl md:p-4">
+              className="flex min-w-48 cursor-pointer items-center justify-between rounded-lg p-2 md:min-w-60 md:rounded-xl md:p-4"
+            >
               <div className="flex items-end gap-1.5">
-                <CheckIcon className={name.toLowerCase() === theme ? 'block' : 'hidden'} />
+                <CheckIcon
+                  className={name.toLowerCase() === theme ? 'block' : 'hidden'}
+                />
                 <span className="text-sm md:text-base">{name}</span>
               </div>
               <div className="flex items-center gap-1.5">
@@ -63,7 +70,8 @@ const ThemeMenu = () => {
                   <div
                     key={color + idx}
                     style={{ background: color }}
-                    className="size-2 rounded-full md:size-3"></div>
+                    className="size-2 rounded-full md:size-3"
+                  ></div>
                 ))}
               </div>
             </div>

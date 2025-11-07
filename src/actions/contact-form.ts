@@ -1,6 +1,9 @@
 'use server'
 
-const action = async (_: { success: boolean; message: string } | null, formData: FormData) => {
+const action = async (
+  _: { success: boolean; message: string } | null,
+  formData: FormData
+) => {
   try {
     const name = formData.get('name')
     if (!name)
@@ -30,11 +33,20 @@ const action = async (_: { success: boolean; message: string } | null, formData:
         message: 'Please provide a message.',
       }
 
+    // Create a clean object with only the form fields we want to send
+    const formPayload = {
+      name: name.toString(),
+      email: email.toString(),
+      subject: subject.toString(),
+      message: message.toString(),
+    }
+
     const res = await fetch(process.env.CONTACT_FORM_ACTION_URL!, {
       method: 'POST',
-      body: formData,
+      body: JSON.stringify(formPayload),
       headers: {
         Accept: 'application/json',
+        'Content-Type': 'application/json',
       },
     })
 

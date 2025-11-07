@@ -19,7 +19,7 @@ const getAllProjects = async (): Promise<Project[]> => {
         const filePath = path.join(projectsPath, projectName)
         const projectDetails = await readProjectFile(filePath)
         return projectDetails
-      }),
+      })
     )
 
     // Sort projects by priority
@@ -43,11 +43,14 @@ const getAllTestimonials = async (): Promise<Testimonial[]> => {
         const filePath = path.join(testimonialsPath, projectName)
         const projectDetails = await fs.readFile(filePath, 'utf8')
         return JSON.parse(projectDetails)
-      }),
+      })
     )
 
     // Sort testimonials by date
-    testimonials.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+    testimonials.sort(
+      (a, b) =>
+        new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+    )
 
     return testimonials
   } catch (error) {

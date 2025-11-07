@@ -9,7 +9,9 @@ interface TestimonialSectionProps {
   testimonials: Testimonial[]
 }
 
-const TestimonialSection: React.FC<TestimonialSectionProps> = ({ testimonials }) => {
+const TestimonialSection: React.FC<TestimonialSectionProps> = ({
+  testimonials,
+}) => {
   const [activeCard, setActiveCard] = useState(0)
 
   return (

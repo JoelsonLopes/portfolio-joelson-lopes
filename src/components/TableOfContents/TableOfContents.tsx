@@ -18,9 +18,12 @@ const TableOfContents = () => {
     <nav className="bg-secondary text-primary-content border-border rounded-2xl p-4 pl-8 lg:my-6 lg:pl-4">
       <div
         onClick={isLargeScreen ? undefined : () => setIsVisible(!isVisible)}
-        className="flex cursor-pointer items-center gap-2 text-lg font-semibold">
+        className="flex cursor-pointer items-center gap-2 text-lg font-semibold"
+      >
         {!isLargeScreen && (
-          <ChevronRightIcon className={`size-6 ${isVisible ? 'rotate-90' : ''}`} />
+          <ChevronRightIcon
+            className={`size-6 ${isVisible ? 'rotate-90' : ''}`}
+          />
         )}
         Table of Contents
       </div>
@@ -28,10 +31,14 @@ const TableOfContents = () => {
       {isVisible && (
         <ul
           onClick={isLargeScreen ? undefined : () => setIsVisible(false)}
-          className="mt-4 list-outside list-[square] space-y-3 ps-6 lg:ps-4">
+          className="mt-4 list-outside list-[square] space-y-3 ps-6 lg:ps-4"
+        >
           {headings.map(({ id, title, items }) => (
             <li key={id}>
-              <a href={`#${id}`} className="hover:text-neutral transition-colors duration-200">
+              <a
+                href={`#${id}`}
+                className="hover:text-neutral transition-colors duration-200"
+              >
                 {title}
               </a>
               {items.length > 0 && (
@@ -40,7 +47,8 @@ const TableOfContents = () => {
                     <li key={child.id}>
                       <a
                         href={`#${child.id}`}
-                        className="hover:text-neutral transition-colors duration-200">
+                        className="hover:text-neutral transition-colors duration-200"
+                      >
                         {child.title}
                       </a>
                     </li>

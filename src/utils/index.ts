@@ -32,7 +32,7 @@ export const getNestedHeadings = (headingElements: Element[]) => {
   headingElements.forEach((heading) => {
     const { textContent: title = '', id } = heading
 
-    if (!title) return false
+    if (!title) return
 
     if (heading.nodeName === 'H2') {
       nestedHeadings.push({ id, title, items: [] })
@@ -52,7 +52,11 @@ export const getNestedHeadings = (headingElements: Element[]) => {
   return nestedHeadings
 }
 
-export function isInViewport(element: HTMLElement, callback: () => void, threshold = 0.4) {
+export function isInViewport(
+  element: HTMLElement,
+  callback: () => void,
+  threshold = 0.4
+) {
   const observer = new IntersectionObserver(
     (entries) => {
       const [entry] = entries
@@ -64,7 +68,7 @@ export function isInViewport(element: HTMLElement, callback: () => void, thresho
     },
     {
       threshold: threshold,
-    },
+    }
   )
 
   observer.observe(element)

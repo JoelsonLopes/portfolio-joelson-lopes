@@ -1,5 +1,6 @@
 // Data for portfolio
 import {
+  AIIcon,
   ExpressjsIcon,
   JavaScriptIcon,
   NestjsIcon,
@@ -68,39 +69,55 @@ export const projects = [
 // Service Data
 export const serviceData = [
   {
+    icon: AIIcon,
+    title: 'Desenvolvimento com IA',
+    shortDescription:
+      'Utilização de ferramentas de IA para otimizar produtividade, qualidade de código e acelerar entregas.',
+  },
+  {
     icon: JavaScriptIcon,
-    title: 'JavaScript Development',
-    shortDescription: 'Creating dynamic and interactive web applications using JavaScript.',
+    title: 'Desenvolvimento JavaScript',
+    shortDescription:
+      'Criação de aplicações web dinâmicas e interativas usando JavaScript moderno.',
   },
   {
     icon: ReactIcon,
-    title: 'React.js Development',
-    shortDescription: 'Building modern and responsive user interfaces with React.js.',
+    title: 'Desenvolvimento React.js',
+    shortDescription:
+      'Construção de interfaces modernas e responsivas com React.js.',
   },
   {
     icon: NodejsIcon,
-    title: 'Node.js Backend',
-    shortDescription: 'Developing scalable server-side applications using Node.js.',
+    title: 'Backend Node.js',
+    shortDescription:
+      'Desenvolvimento de aplicações server-side escaláveis usando Node.js.',
   },
   {
     icon: NextjsIcon,
-    title: 'Next.js Development',
-    shortDescription: 'Creating server-rendered React applications with Next.js.',
+    title: 'Desenvolvimento Next.js',
+    shortDescription:
+      'Criação de aplicações React com renderização server-side usando Next.js.',
   },
   {
     icon: TypescriptIcon,
-    title: 'TypeScript Development',
-    shortDescription: 'Ensuring robust and maintainable code with TypeScript.',
+    title: 'Desenvolvimento TypeScript',
+    shortDescription:
+      'Garantia de código robusto e manutenível com TypeScript.',
   },
   {
     icon: TailwindCSS,
-    title: 'Tailwind CSS Styling',
-    shortDescription: 'Designing beautiful and responsive interfaces with Tailwind CSS.',
+    title: 'Estilização Tailwind CSS',
+    shortDescription:
+      'Design de interfaces bonitas e responsivas com Tailwind CSS.',
   },
 ]
 
 // Skill List
 export const skillList = [
+  {
+    name: 'AI Tools',
+    icon: AIIcon,
+  },
   {
     name: 'JavaScript',
     icon: JavaScriptIcon,
@@ -133,22 +150,21 @@ export const skillList = [
     name: 'Socket.io',
     icon: SocketIcon,
   },
+  {
+    name: 'Tailwind CSS',
+    icon: TailwindCSS,
+  },
 ]
 
 export const footerLinks = [
-  { title: 'About', href: '#' },
-  { title: 'Projects', href: '#projects' },
-  { title: 'Testimonials', href: '#testimonials' },
+  { title: 'Início', href: '/' },
+  { title: 'Projetos', href: '#projects' },
   {
-    title: 'Blogs',
-    href: '#blogs',
-  },
-  {
-    title: 'Services',
+    title: 'Serviços',
     href: '#services',
   },
   {
-    title: 'Contact',
+    title: 'Contato',
     href: '#contact',
   },
 ]
@@ -172,4 +188,4 @@ export const themes = [
   },
 ]
 
-export const languages = ['En', 'Es', 'Fr', 'De', 'Ru']
+export const languages = ['PT', 'EN']

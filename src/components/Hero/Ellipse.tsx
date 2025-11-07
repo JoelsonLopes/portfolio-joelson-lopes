@@ -13,7 +13,8 @@ const Ellipse: FC<EllipseProps> = ({ ref, ...props }) => {
       viewBox="0 0 412 413"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}>
+      {...props}
+    >
       <circle
         cx="206"
         cy="206.401"

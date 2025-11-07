@@ -23,7 +23,8 @@ function useRotatingAnimation({
     }
 
     const intervalId = setInterval(() => {
-      ellipseAngle.current = ellipseAngle.current < 90 ? ellipseAngle.current + rotationStep : 0
+      ellipseAngle.current =
+        ellipseAngle.current < 90 ? ellipseAngle.current + rotationStep : 0
     }, interval)
 
     const frameId = requestAnimationFrame(rotateEllipse)

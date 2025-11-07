@@ -25,7 +25,8 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '1rem',
-        }}>
+        }}
+      >
         <h1 style={{ fontSize: 32, color: '#18f2e5', margin: 0 }}>
           John Doe | Full-Stack Web Developer in Chicago
         </h1>
@@ -37,6 +38,6 @@ export default async function Image() {
     // ImageResponse options
     {
       ...size,
-    },
+    }
   )
 }
