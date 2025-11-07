@@ -11,7 +11,7 @@ const firaCode = Fira_Code({
   weight: ['300', '400', '500', '600', '700'],
 })
 
-const title = 'Joelson Lopes | Full-Stack Web Developer'
+const title = 'Joelson Lopes | Desenvolvedor Full-Stack'
 
 const description =
   'Desenvolvedor full-stack especializado em criar soluções web modernas e responsivas. Experiência com React, Next.js, Node.js e outras tecnologias. Transformo ideias em produtos digitais de qualidade.'
@@ -47,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="pt-BR" data-theme="dark">
       <body className={`${firaCode.className}`}>
         <header>
           <Navbar />

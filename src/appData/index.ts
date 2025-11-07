@@ -16,51 +16,51 @@ import {
 export const projects = [
   {
     priority: 1,
-    title: 'Project Alpha',
+    title: 'Projeto Alpha',
     shortDescription:
-      'A groundbreaking project that revolutionizes the way we approach technology. Built with cutting-edge tools for maximum efficiency, it sets new industry standards.',
+      'Um projeto inovador que revoluciona a forma como abordamos a tecnologia. Construído com ferramentas de ponta para máxima eficiência, estabelece novos padrões da indústria.',
     cover:
       'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     livePreview: 'https://example.com/alpha',
-    type: 'Client Work 🙍‍♂️',
-    siteAge: '1 month old',
+    type: 'Trabalho de Cliente 🙍‍♂️',
+    siteAge: '1 mês',
   },
   {
     priority: 2,
-    title: 'Project Beta',
+    title: 'Projeto Beta',
     shortDescription:
-      'Project Beta is a static technical blog site built with GatsbyJS. I share tips on topics like building reusable components in React, explaining JavaScript methods and concepts, Node.js scripts, and more.',
+      'Projeto Beta é um blog técnico estático construído com GatsbyJS. Compartilho dicas sobre tópicos como construção de componentes reutilizáveis em React, explicação de métodos e conceitos JavaScript, scripts Node.js e muito mais.',
     cover:
       'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     livePreview: 'https://example.com/beta',
-    visitors: '8K Visitors',
-    earned: '$400 Earned',
+    visitors: '8K Visitantes',
+    earned: 'R$ 2.000',
   },
   {
     priority: 3,
-    title: 'Project Epsilon',
+    title: 'Projeto Epsilon',
     shortDescription:
-      'A collection of engaging coding challenges designed to help developers improve their ReactJS skills by writing functional business logic. Your task is to make it functional by writing business logic, to improve your frontend skills',
+      'Uma coleção de desafios de código envolventes projetados para ajudar desenvolvedores a melhorar suas habilidades em ReactJS escrevendo lógica de negócio funcional. Seu objetivo é torná-lo funcional escrevendo lógica de negócio para melhorar suas habilidades frontend.',
     cover:
       'https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 
-    type: 'Free 🔥',
+    type: 'Grátis 🔥',
     livePreview: 'https://example.com/epsilon',
     githubLink: 'https://github.com/example/ReactJS-Coding-Challenges',
-    githubStars: '40 Stars',
-    numberOfSales: '138 Sales',
+    githubStars: '40 Estrelas',
+    numberOfSales: '138 Vendas',
   },
   {
     priority: 4,
-    title: 'Ejucationzz',
+    title: 'Educação Online',
     shortDescription:
-      'Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed. Ejucationzz is a directory site I created for myself using Next.js. On Ejucationzz, you can find free and paid online and offline courses available in Pakistan. 14 academies and 12 main categories, each with subcategories, have been listed.',
+      'Um site de diretório que criei usando Next.js. Nele você pode encontrar cursos online e presenciais gratuitos e pagos. 14 academias e 12 categorias principais, cada uma com subcategorias, foram listadas.',
     cover:
       'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    type: 'New 🔥',
+    type: 'Novo 🔥',
     livePreview: 'https://example.com/Ejucationzz',
-    siteAge: '4 months old',
-    visitors: '100 Visitors',
+    siteAge: '4 meses',
+    visitors: '100 Visitantes',
     githubLink: '',
     earned: '',
   },
@@ -115,7 +115,7 @@ export const serviceData = [
 // Skill List
 export const skillList = [
   {
-    name: 'AI Tools',
+    name: 'Ferramentas de IA',
     icon: AIIcon,
   },
   {
@@ -171,11 +171,11 @@ export const footerLinks = [
 
 export const themes = [
   {
-    name: 'Light',
+    name: 'Claro',
     colors: ['#fff', '#0d1a3b', '#dbe3f7', '#0d1a3b', '#5565e8'],
   },
   {
-    name: 'Dark',
+    name: 'Escuro',
     colors: ['#011627', '#607b96', '#0d1a3b', '#5565e8', '#18f2e5'],
   },
   {
@@ -183,9 +183,9 @@ export const themes = [
     colors: ['#b2e4e8', '#004a55', '#00c1d4', '#004a55', '#ff6f61'],
   },
   {
-    name: 'Retro',
+    name: 'Retrô',
     colors: ['#fff3e0', '#6d4c41', '#ffcc80', '#5d4037', '#ffab40'],
   },
 ]
 
-export const languages = ['PT', 'EN']
+export const languages = ['PT-BR', 'EN']

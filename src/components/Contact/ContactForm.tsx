@@ -20,31 +20,31 @@ const ContactForm = () => {
   return (
     <form action={formAction}>
       <Input
-        label="Full name"
+        label="Nome completo"
         id="name"
         name="name"
-        placeholder="Your name here"
+        placeholder="Seu nome aqui"
         required
       />
       <Input
-        label="Email address"
+        label="Endereço de e-mail"
         id="email"
         type="email"
         name="email"
-        placeholder="Your email address here"
+        placeholder="Seu e-mail aqui"
         required
       />
       <Input
-        label="Subject"
+        label="Assunto"
         id="subject"
         name="subject"
-        placeholder="Your subject here"
+        placeholder="Assunto da mensagem"
       />
       <Textarea
-        label="Message"
+        label="Mensagem"
         id="message"
         name="message"
-        placeholder="Your message here"
+        placeholder="Sua mensagem aqui"
         rows={7}
         required
       />
@@ -52,7 +52,7 @@ const ContactForm = () => {
         <p className="my-2 font-light text-red-600">{status?.message}</p>
       )}
       <Button
-        text={isPending ? 'Submitting...' : 'Submit'}
+        text={isPending ? 'Enviando...' : 'Enviar'}
         disabled={isPending}
       />
     </form>

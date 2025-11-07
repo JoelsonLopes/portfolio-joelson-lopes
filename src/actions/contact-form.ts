@@ -9,28 +9,28 @@ const action = async (
     if (!name)
       return {
         success: false,
-        message: 'Please provide your name.',
+        message: 'Por favor, informe seu nome.',
       }
 
     const email = formData.get('email')
     if (!email)
       return {
         success: false,
-        message: 'Please provide your email address.',
+        message: 'Por favor, informe seu endereço de e-mail.',
       }
 
     const subject = formData.get('subject')
     if (!subject)
       return {
         success: false,
-        message: 'Please provide a subject.',
+        message: 'Por favor, informe um assunto.',
       }
 
     const message = formData.get('message')
     if (!message)
       return {
         success: false,
-        message: 'Please provide a message.',
+        message: 'Por favor, digite uma mensagem.',
       }
 
     // Create a clean object with only the form fields we want to send
@@ -51,21 +51,21 @@ const action = async (
     })
 
     if (res.ok) {
-      return { success: true, message: 'Thanks for your submission!' }
+      return { success: true, message: 'Sua mensagem foi enviada com sucesso!' }
     } else {
       const data = await res.json()
       console.error(data?.error)
 
       return {
         success: false,
-        message: 'Oops! There was a problem submitting your form',
+        message: 'Oops! Ocorreu um problema ao enviar seu formulário.',
       }
     }
   } catch (error) {
     console.error('Contact form submission error: ' + error)
     return {
       success: false,
-      message: 'Oops! There was a problem submitting your form',
+      message: 'Oops! Ocorreu um problema ao enviar seu formulário.',
     }
   }
 }

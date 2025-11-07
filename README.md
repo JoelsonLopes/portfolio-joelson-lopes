@@ -10,7 +10,7 @@
 
 ## 🚀 Sobre o Projeto
 
-Este é meu portfólio pessoal, onde demonstro minhas habilidades como desenvolvedor full-stack. O site apresenta meus projetos, serviços oferecidos, tecnologias que domino e formas de entrar em contato.
+Este é o meu portfólio pessoal, onde demonstro minhas habilidades como desenvolvedor full-stack. O site apresenta meus projetos, serviços oferecidos, tecnologias que domino e formas de entrar em contato.
 
 **Destaque especial:** Integração com ferramentas de IA para otimizar o processo de desenvolvimento.
 
@@ -28,7 +28,7 @@ Este é meu portfólio pessoal, onde demonstro minhas habilidades como desenvolv
 
 ## 🛠️ Tecnologias Utilizadas
 
-### Core
+### Principal
 
 - **[Next.js 15.5.6](https://nextjs.org/)** - Framework React com App Router e Turbopack
 - **[React 19](https://react.dev/)** - Biblioteca JavaScript para interfaces
@@ -36,7 +36,7 @@ Este é meu portfólio pessoal, onde demonstro minhas habilidades como desenvolv
 
 ### Styling
 
-- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework CSS utilitário
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Framework de CSS utilitário
 - **Tailwind Animate** - Animações CSS com Tailwind
 
 ### Integrações
@@ -54,7 +54,7 @@ Este é meu portfólio pessoal, onde demonstro minhas habilidades como desenvolv
 
 ### Pré-requisitos
 
-- Node.js 18+ instalado
+- Node.js 18+
 - npm ou yarn
 
 ### Passos para executar localmente
@@ -148,7 +148,7 @@ Edite o arquivo `src/appData/index.ts` para atualizar serviços e habilidades.
 
 ### Outras Plataformas
 
-O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
+O projeto pode ser implantado em qualquer plataforma que suporte Next.js:
 
 - Netlify
 - AWS Amplify
@@ -161,16 +161,12 @@ O projeto pode ser deployado em qualquer plataforma que suporte Next.js:
 
 - 🌐 Portfolio: [em breve]
 - 💼 LinkedIn: [linkedin.com/in/joelson-lopes](https://www.linkedin.com/in/joelson-lopes)
-- 📧 Email: seu-email@exemplo.com
+- 📧 Email: joelsonlopes85@gmail.com
 - 📍 Localização: Brasil (Disponível para trabalho remoto)
 
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 🙏 Agradecimentos
-
-Template base desenvolvido por [Abdul Basit](https://github.com/AbdulBasit313/nextjs-portfolio-template), personalizado e adaptado com minhas informações e melhorias.
 
 ---
 

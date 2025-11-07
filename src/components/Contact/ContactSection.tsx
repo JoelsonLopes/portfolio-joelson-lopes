@@ -9,17 +9,19 @@ const ContactSection = () => {
     >
       <div className="flex flex-col justify-between gap-8">
         <div>
-          <h3 className="text-neutral text-3xl font-bold">Let's Talk</h3>
+          <h3 className="text-neutral text-3xl font-bold">Vamos Conversar</h3>
           <h4 className="text-accent text-2xl font-bold md:text-3xl">
-            We'd love to help
+            Estou aqui para ajudar
           </h4>
           <p className="text-neutral mt-8">
-            Crafting innovative solutions to solve real-world problems
+            Criando soluções inovadoras para resolver problemas do mundo real.
           </p>
         </div>
 
         <div className="space-y-2">
-          <p className="text-neutral text-lg font-bold">Contact Information</p>
+          <p className="text-neutral text-lg font-bold">
+            Informações de Contato
+          </p>
           <a
             href="mailto:joelsonlopes85@gmail.com"
             className="text-neutral hover:text-accent flex items-center gap-1 font-light transition-colors duration-300"
