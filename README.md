@@ -168,6 +168,10 @@ O projeto pode ser implantado em qualquer plataforma que suporte Next.js:
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
+## 🙏 Créditos
+
+Template original desenvolvido por [Abdul Basit](https://github.com/abd-ul-basit). Este portfólio foi adaptado e personalizado com conteúdo próprio, mantendo os créditos ao criador original conforme a licença MIT.
+
 ---
 
 **Desenvolvido com ❤️ e ☕ por Joelson Lopes**
