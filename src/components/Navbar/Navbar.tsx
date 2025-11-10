@@ -8,19 +8,19 @@ import Logo from './Logo'
 
 const navItems = [
   {
-    label: '_home',
+    label: '_início',
     href: '/',
   },
   {
-    label: '_projects',
+    label: '_projetos',
     href: '/#projects',
   },
   {
-    label: '_services',
+    label: '_serviços',
     href: '/#services',
   },
   {
-    label: '_contact-me',
+    label: '_contato',
     href: '/#contact',
   },
 ]
@@ -64,7 +64,7 @@ const Navbar = () => {
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s md:last:ml-auto md:last:border-none md:last:px-0 lg:px-8"
+              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s lg:px-8"
             >
               <Link
                 href={href}
@@ -74,6 +74,19 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li
+            onClick={() => setIsVisible(false)}
+            className="border-border flex items-center border-b px-4 text-2xl md:ml-auto md:border-y-0 md:border-none md:px-0 md:text-base"
+          >
+            <a
+              href="/assets/CV JOELSON LOPES.pdf"
+              download="CV-Joelson-Lopes.pdf"
+              aria-label="Baixar Currículo"
+              className="text-primary-content hover:text-accent w-full py-7 transition-all duration-150 md:py-0"
+            >
+              _download-cv
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

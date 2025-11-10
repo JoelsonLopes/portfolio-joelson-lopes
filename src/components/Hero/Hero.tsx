@@ -33,7 +33,7 @@ const Hero = () => {
             <a
               href="#contact"
               aria-label="Entre em contato"
-              className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]"
+              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
             >
               Entre em Contato
             </a>
@@ -42,9 +42,17 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Ver Perfil no LinkedIn"
-              className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm"
+              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
             >
               Perfil LinkedIn
+            </a>
+            <a
+              href="/assets/CV JOELSON LOPES.pdf"
+              download="CV-Joelson-Lopes.pdf"
+              aria-label="Baixar Currículo"
+              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
+            >
+              Download CV
             </a>
           </div>
         </div>
