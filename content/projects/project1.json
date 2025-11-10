@@ -1,9 +1,11 @@
 {
   "priority": 1,
-  "title": "Color Contrast Collection",
-  "shortDescription": "Curated Background with Text colors contrast, help you to pick best contrast for your websites",
-  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1645090814/color-contrast_n598kw.png",
-  "livePreview": "https://example.com/alpha",
-  "type": "Client Work 🙍‍♂️",
-  "siteAge": "1 month old"
+  "title": "Projeto Estoque",
+  "shortDescription": "O Stock-SP é uma aplicação web moderna desenvolvida em Next.js para gerenciamento de estoque de produtos automotivos, com foco em filtros, palhetas e óleos lubrificantes. O sistema oferece funcionalidades completas de autenticação, gestão de produtos, equivalências e importação de dados via CSV.",
+  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png",
+  "type": "Free 🔥",
+  "livePreview": "https://stock-portfolio-demo.vercel.app/",
+  "githubLink": "https://github.com/JoelsonLopes/stock-portfolio-demo",
+  "githubStars": "40 Stars",
+  "numberOfSales": "138 Sales"
 }

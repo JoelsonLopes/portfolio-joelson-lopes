@@ -16,14 +16,16 @@ import {
 export const projects = [
   {
     priority: 1,
-    title: 'Projeto Alpha',
+    title: 'Projeto Estoque',
     shortDescription:
-      'Um projeto inovador que revoluciona a forma como abordamos a tecnologia. Construído com ferramentas de ponta para máxima eficiência, estabelece novos padrões da indústria.',
+      'O Stock-SP é uma aplicação web moderna desenvolvida em Next.js para gerenciamento de estoque de produtos automotivos, com foco em filtros, palhetas e óleos lubrificantes. O sistema oferece funcionalidades completas de autenticação, gestão de produtos, equivalências e importação de dados via CSV.',
     cover:
-      'https://images.unsplash.com/photo-1585282263861-f55e341878f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/alpha',
-    type: 'Trabalho de Cliente 🙍‍♂️',
-    siteAge: '1 mês',
+      'https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png',
+    livePreview: 'https://stock-portfolio-demo.vercel.app/',
+    type: 'Grátis 🔥',
+    githubLink: 'https://github.com/JoelsonLopes/stock-portfolio-demo',
+    githubStars: '40 Estrelas',
+    numberOfSales: '138 Vendas',
   },
   {
     priority: 2,
