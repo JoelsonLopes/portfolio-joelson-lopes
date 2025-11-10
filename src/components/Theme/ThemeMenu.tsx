@@ -11,7 +11,18 @@ const ThemeMenu = () => {
   const menuRef = useOutsideClick(() => setShowThemeMenu(false))
 
   useEffect(() => {
-    if (window) setTheme(localStorage.getItem('theme') ?? theme)
+    if (window) {
+      const savedTheme = localStorage.getItem('theme')
+      const validThemes = ['light', 'dark', 'aqua', 'retro']
+
+      // Se o tema salvo for válido, usa ele. Senão, usa 'dark' como padrão
+      if (savedTheme && validThemes.includes(savedTheme)) {
+        setTheme(savedTheme)
+      } else {
+        setTheme('dark')
+        localStorage.setItem('theme', 'dark')
+      }
+    }
   }, [])
 
   useEffect(() => {
@@ -52,7 +63,7 @@ const ThemeMenu = () => {
             />
           </div>
 
-          {themes.map(({ name, colors }) => (
+          {themes.map(({ name, label, colors }) => (
             <div
               key={name}
               onClick={() => changeTheme(name.toLowerCase())}
@@ -63,7 +74,7 @@ const ThemeMenu = () => {
                 <CheckIcon
                   className={name.toLowerCase() === theme ? 'block' : 'hidden'}
                 />
-                <span className="text-sm md:text-base">{name}</span>
+                <span className="text-sm md:text-base">{label}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 {colors.slice(1).map((color, idx) => (

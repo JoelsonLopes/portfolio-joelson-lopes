@@ -14,7 +14,8 @@ const ContactSection = () => {
             Estou aqui para ajudar
           </h4>
           <p className="text-neutral mt-8">
-            Criando soluções inovadoras para resolver problemas do mundo real.
+            Transformando ideias em realidade através de desenvolvimento
+            full-stack de alta qualidade e produtividade.
           </p>
         </div>
 
