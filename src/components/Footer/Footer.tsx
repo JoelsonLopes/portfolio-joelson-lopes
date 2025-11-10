@@ -47,6 +47,8 @@ const Footer = () => {
               <li key={index} className="cursor-pointer bg-transparent">
                 <a
                   href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-neutral transition-color hover:text-neutral/50 h-full w-full duration-300"
                 >
                   {item.icon}
