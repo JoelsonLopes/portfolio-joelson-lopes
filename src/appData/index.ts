@@ -22,10 +22,9 @@ export const projects = [
     cover:
       'https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png',
     livePreview: 'https://stock-portfolio-demo.vercel.app/',
-    type: 'Grátis 🔥',
+    type: 'Freelance 🔥',
     githubLink: 'https://github.com/JoelsonLopes/stock-portfolio-demo',
-    githubStars: '40 Estrelas',
-    numberOfSales: '138 Vendas',
+    siteAge: 'Nov 2025',
   },
   {
     priority: 2,
@@ -36,8 +35,9 @@ export const projects = [
       'https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png',
     type: 'Freelance',
     livePreview: '',
-    githubLink: '',
-    siteAge: 'Nov 2025',
+    githubLink: 'https://github.com/JoelsonLopes/surgical-scheduler-demo',
+    siteAge: '4 meses',
+    visitors: '100 Visitantes',
   },
   {
     priority: 3,

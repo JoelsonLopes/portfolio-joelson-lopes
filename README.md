@@ -14,7 +14,7 @@ Este é o meu portfólio pessoal, onde demonstro minhas habilidades como desenvo
 
 **Destaque especial:** Integração com ferramentas de IA para otimizar o processo de desenvolvimento.
 
-🔗 **[Ver site ao vivo](https://seu-portfolio.vercel.app)** _(em breve)_
+🔗 **[Ver site ao vivo](https://portfolio-joelson-lopes.vercel.app/)**
 
 ## ✨ Funcionalidades
 
@@ -159,7 +159,7 @@ O projeto pode ser implantado em qualquer plataforma que suporte Next.js:
 
 **Joelson Lopes** - Desenvolvedor Full-Stack
 
-- 🌐 Portfolio: [em breve]
+- 🌐 Portfolio: https://portfolio-joelson-lopes.vercel.app/
 - 💼 LinkedIn: [linkedin.com/in/joelson-lopes](https://www.linkedin.com/in/joelson-lopes)
 - 📧 Email: joelsonlopes85@gmail.com
 - 📍 Localização: Brasil (Disponível para trabalho remoto)
