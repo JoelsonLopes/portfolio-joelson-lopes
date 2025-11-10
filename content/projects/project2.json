@@ -1,0 +1,10 @@
+{
+  "priority": 2,
+  "title": "Sistema de Gestão do Bloco Cirúrgico",
+  "shortDescription": "Sistema web responsivo desenvolvido para a Clínica Lavinsky para gestão completa do bloco cirúrgico, focado em eficiência, escalabilidade e segurança (LGPD/HIPAA). Inclui módulos para solicitação, acompanhamento e aprovação de reservas, com interfaces diferenciadas para médicos e administradores. Destaques: resposta < 200ms em operações críticas, uptime 99.9%, autenticação segura, controle de acesso granular, logs de auditoria e backup automatizado.",
+  "cover": "https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png",
+  "type": "Freelance",
+  "livePreview": "",
+  "githubLink": "",
+  "siteAge": "Nov 2025"
+}

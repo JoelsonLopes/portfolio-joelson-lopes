@@ -29,14 +29,15 @@ export const projects = [
   },
   {
     priority: 2,
-    title: 'Projeto Beta',
+    title: 'Sistema de Gestão do Bloco Cirúrgico',
     shortDescription:
-      'Projeto Beta é um blog técnico estático construído com GatsbyJS. Compartilho dicas sobre tópicos como construção de componentes reutilizáveis em React, explicação de métodos e conceitos JavaScript, scripts Node.js e muito mais.',
+      'Sistema web responsivo desenvolvido para a Clínica Lavinsky para gestão completa do bloco cirúrgico, focado em eficiência, escalabilidade e segurança (LGPD/HIPAA). Inclui módulos para solicitação, acompanhamento e aprovação de reservas, com interfaces diferenciadas para médicos e administradores. Destaques: resposta < 200ms em operações críticas, uptime 99.9%, autenticação segura, controle de acesso granular, logs de auditoria e backup automatizado.',
     cover:
-      'https://plus.unsplash.com/premium_photo-1663040328859-48bddaa9dfeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    livePreview: 'https://example.com/beta',
-    visitors: '8K Visitantes',
-    earned: 'R$ 2.000',
+      'https://res.cloudinary.com/dyvkdwzcj/image/upload/v1656971294/waitlist-template_qr4l9k.png',
+    type: 'Freelance',
+    livePreview: '',
+    githubLink: '',
+    siteAge: 'Nov 2025',
   },
   {
     priority: 3,
