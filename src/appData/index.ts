@@ -36,36 +36,7 @@ export const projects = [
     type: 'Freelance',
     livePreview: '',
     githubLink: 'https://github.com/JoelsonLopes/surgical-scheduler-demo',
-    siteAge: '4 meses',
-    visitors: '100 Visitantes',
-  },
-  {
-    priority: 3,
-    title: 'Projeto Epsilon',
-    shortDescription:
-      'Uma coleção de desafios de código envolventes projetados para ajudar desenvolvedores a melhorar suas habilidades em ReactJS escrevendo lógica de negócio funcional. Seu objetivo é torná-lo funcional escrevendo lógica de negócio para melhorar suas habilidades frontend.',
-    cover:
-      'https://plus.unsplash.com/premium_photo-1661700152890-931fb04588e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-
-    type: 'Grátis 🔥',
-    livePreview: 'https://example.com/epsilon',
-    githubLink: 'https://github.com/example/ReactJS-Coding-Challenges',
-    githubStars: '40 Estrelas',
-    numberOfSales: '138 Vendas',
-  },
-  {
-    priority: 4,
-    title: 'Educação Online',
-    shortDescription:
-      'Um site de diretório que criei usando Next.js. Nele você pode encontrar cursos online e presenciais gratuitos e pagos. 14 academias e 12 categorias principais, cada uma com subcategorias, foram listadas.',
-    cover:
-      'https://images.unsplash.com/photo-1527334919515-b8dee906a34b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    type: 'Novo 🔥',
-    livePreview: 'https://example.com/Ejucationzz',
-    siteAge: '4 meses',
-    visitors: '100 Visitantes',
-    githubLink: '',
-    earned: '',
+    siteAge: '8 meses',
   },
 ]
 
