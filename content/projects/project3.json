@@ -1,0 +1,10 @@
+{
+  "priority": 3,
+  "title": "Landing Page - Santos Penedo",
+  "shortDescription": "Landing page institucional desenvolvida para Santos Penedo & Cia Ltda, distribuidora de filtros automotivos, palhetas e lubrificantes com 67 anos de mercado e mais de 3.000 clientes ativos no Rio Grande do Sul. Site moderno e responsivo apresentando portfólio de marcas parceiras (Mann Filter, Fram, Tecfil, Bosch), equipe comercial (16 representantes), frota própria de distribuição e diferenciais competitivos. Implementa formulário de contato integrado, seções de apresentação da empresa, showcase de marcas parceiras e múltiplos canais de comunicação. Design clean e profissional otimizado para conversão de leads. Tecnologias: Next.js 15, React, TypeScript, Tailwind CSS, com foco em performance e SEO.",
+  "cover": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
+  "type": "Freelance",
+  "livePreview": "https://santos-penedo.vercel.app",
+  "githubLink": "https://github.com/SantosPenedo/santos-penedo",
+  "siteAge": "Jan 2025"
+}
