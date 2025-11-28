@@ -17,6 +17,7 @@ const ServiceSection = () => {
             icon={service.icon}
             title={service.title}
             shortDescription={service.shortDescription}
+            technologies={service.technologies}
           />
         ))}
       </div>

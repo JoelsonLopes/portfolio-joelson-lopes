@@ -35,6 +35,9 @@ const ContactSection = () => {
           >
             <PhoneIcon /> +55 51 99432-5454
           </a>
+          <p className="text-accent/80 mt-4 text-sm font-medium">
+            Disponível para vagas remotas (PJ/CLT) e projetos freelance.
+          </p>
         </div>
       </div>
 

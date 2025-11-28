@@ -8,7 +8,11 @@ import Ellipse from './Ellipse'
 const Hero = () => {
   const ellipseRef = useRotatingAnimation()
   const role = useRoleSwitcher({
-    roles: ['FULLSTACK DEVELOPER', 'WEB DEVELOPER', 'SOFTWARE ENGINEER'],
+    roles: [
+      'DESENVOLVEDOR FULL-STACK',
+      'REACT/NEXT.JS EXPERT',
+      'PRODUTO & RESULTADO',
+    ],
   })
 
   return (
@@ -25,9 +29,14 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Desenvolvendo soluções inovadoras para transformar ideias em
-            realidade
+            Foco atual: stack React/Next.js com Node.js e TypeScript, usando IA
+            para acelerar entrega com qualidade.
           </h2>
+
+          <p className="text-neutral/80 mt-2 text-sm font-medium">
+            +15 projetos entregues para empresas de saúde e distribuição
+            automotiva
+          </p>
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a

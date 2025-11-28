@@ -81,10 +81,38 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
       </div>
 
       <div>
-        <div className="bg-primary text-primary-content my-4 h-[185px] overflow-scroll rounded-2xl px-4 py-2">
+        <div className="bg-primary text-primary-content my-4 h-[250px] overflow-scroll rounded-2xl px-4 py-2">
           <p className="text-[14px] font-normal md:text-base">
             {shortDescription}
           </p>
+
+          {data.results && data.results.length > 0 && (
+            <div className="mt-4">
+              <h4 className="text-accent mb-2 text-sm font-semibold">
+                Resultados:
+              </h4>
+              <ul className="list-inside list-disc space-y-1">
+                {data.results.map((result, idx) => (
+                  <li key={idx} className="text-sm font-light">
+                    {result}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {data.stack && data.stack.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {data.stack.map((tech, idx) => (
+                <span
+                  key={idx}
+                  className="bg-secondary text-neutral rounded-full px-2 py-1 text-xs font-medium"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
         <div className="flex gap-5">
           {livePreview && (

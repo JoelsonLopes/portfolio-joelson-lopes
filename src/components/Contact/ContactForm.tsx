@@ -19,6 +19,10 @@ const ContactForm = () => {
 
   return (
     <form action={formAction}>
+      <p className="text-neutral/60 mb-4 text-sm">
+        Conte brevemente o problema ou projeto que deseja desenvolver. Resposta
+        em até 24h.
+      </p>
       <Input
         label="Nome completo"
         id="name"

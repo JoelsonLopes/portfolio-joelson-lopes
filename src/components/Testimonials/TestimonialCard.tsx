@@ -17,15 +17,16 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 
   useEffect(() => {
     let observer: IntersectionObserver
+    const element = cardRef.current
 
-    if (cardRef.current) {
-      observer = isInViewport(cardRef.current, handleActiveCard)
+    if (element) {
+      observer = isInViewport(element, handleActiveCard)
     }
 
     return () => {
       observer?.disconnect()
     }
-  }, [cardRef.current])
+  }, [handleActiveCard])
 
   return (
     <div

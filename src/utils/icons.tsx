@@ -1,6 +1,9 @@
 import { FC, SVGProps } from 'react'
 
 import AIIcon from '../assets/icons/ai.svg'
+import ChatGPTIcon from '../assets/icons/chatgpt.svg'
+import ClaudeIcon from '../assets/icons/claude.svg'
+import CursorIcon from '../assets/icons/cursor.svg'
 import Earning from '../assets/icons/earning.svg'
 import ExpressjsIcon from '../assets/icons/express.svg'
 import JavaScriptIcon from '../assets/icons/javascript.svg'
@@ -14,6 +17,7 @@ import Star from '../assets/icons/star.svg'
 import TailwindCSS from '../assets/icons/tailwind-css.svg'
 import Timer from '../assets/icons/timer.svg'
 import TypescriptIcon from '../assets/icons/typescript.svg'
+import VsCodeIcon from '../assets/icons/vscode.svg'
 
 const PreviewIcon: FC<SVGProps<SVGSVGElement>> = (props) => {
   return (
@@ -350,10 +354,13 @@ export {
   ArrowLeftIcon,
   ArrowRightIcon,
   BurgerIcon,
+  ChatGPTIcon,
   CheckIcon,
   ChevronRightIcon,
+  ClaudeIcon,
   CloseIcon,
   Codepen,
+  CursorIcon,
   Earning,
   ExpressjsIcon,
   Facebook,
@@ -375,6 +382,7 @@ export {
   TailwindCSS,
   Timer,
   TypescriptIcon,
+  VsCodeIcon,
   WhatsAppIcon,
   X,
 }
