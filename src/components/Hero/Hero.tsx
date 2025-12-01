@@ -2,11 +2,24 @@
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from 'next/image'
-import { HeroImage } from '../../utils/images'
+import { useState } from 'react'
+import {
+  HeroDev,
+  HeroDevCyberpunk,
+  HeroDevNext,
+  HeroDevTech,
+} from '../../utils/images'
 import Ellipse from './Ellipse'
 
 const Hero = () => {
-  const ellipseRef = useRotatingAnimation()
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const images = [HeroDev, HeroDevTech, HeroDevNext, HeroDevCyberpunk]
+
+  const ellipseRef = useRotatingAnimation({
+    onStep: () => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
+    },
+  })
   const role = useRoleSwitcher({
     roles: [
       'DESENVOLVEDOR FULL-STACK',
@@ -69,7 +82,7 @@ const Hero = () => {
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
           <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
             <Image
-              src={HeroImage}
+              src={images[currentImageIndex]}
               fill={true}
               priority={true}
               sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"

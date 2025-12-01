@@ -58,7 +58,7 @@ export const serviceData = [
     title: 'Desenvolvimento Potencializado por IA',
     shortDescription:
       'Aceleração do desenvolvimento e garantia de qualidade superior utilizando as mais recentes ferramentas de Inteligência Artificial.',
-    technologies: 'Copilot, ChatGPT, Claude, V0',
+    technologies: 'Copilot, ChatGPT, Claude, Perplexity, Gemini',
   },
   {
     icon: NextjsIcon,

@@ -4,12 +4,14 @@ interface RotatingAnimationOptions {
   initialAngle?: number
   rotationStep?: number
   interval?: number
+  onStep?: () => void
 }
 
 function useRotatingAnimation({
   initialAngle = 0,
   rotationStep = 30,
   interval = 1500,
+  onStep,
 }: RotatingAnimationOptions = {}): React.RefObject<SVGSVGElement> {
   const ellipseRef = useRef<SVGSVGElement>(null)
   const ellipseAngle = useRef<number>(initialAngle)
@@ -25,6 +27,7 @@ function useRotatingAnimation({
     const intervalId = setInterval(() => {
       ellipseAngle.current =
         ellipseAngle.current < 90 ? ellipseAngle.current + rotationStep : 0
+      if (onStep) onStep()
     }, interval)
 
     const frameId = requestAnimationFrame(rotateEllipse)
