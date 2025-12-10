@@ -1,4 +1,5 @@
 import { skillList } from '@/appData'
+import AboutSection from '@/components/About/AboutSection'
 import ContactSection from '@/components/Contact/ContactSection'
 import Hero from '@/components/Hero/Hero'
 import ProjectSection from '@/components/Projects/ProjectSection'
@@ -12,6 +13,7 @@ export default async function Home() {
   return (
     <main>
       <Hero />
+      <AboutSection />
       <Skills skills={skillList} />
       <div className="mx-auto my-8 max-w-[1200px] px-4 md:my-[3.75rem]">
         <ProjectSection projects={projects} />
