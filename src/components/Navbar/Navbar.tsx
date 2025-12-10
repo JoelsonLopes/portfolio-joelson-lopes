@@ -12,6 +12,10 @@ const navItems = [
     href: '/',
   },
   {
+    label: '_sobre-mim',
+    href: '/#about',
+  },
+  {
     label: '_projetos',
     href: '/#projects',
   },
@@ -64,11 +68,11 @@ const Navbar = () => {
             <li
               key={href}
               onClick={() => setIsVisible(false)}
-              className="border-border flex items-center border-b px-4 text-2xl md:border-y-0 md:border-e md:text-base md:first:border-s lg:px-8"
+              className="border-border flex items-center border-b px-3 text-2xl md:border-y-0 md:border-e md:text-sm md:first:border-s lg:px-6 lg:text-base"
             >
               <Link
                 href={href}
-                className={`text-primary-content hover:text-neutral w-full py-7 transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral cursor-text' : ''}`}
+                className={`text-primary-content hover:text-neutral w-full py-7 whitespace-nowrap transition-all duration-150 md:py-0 ${pathname === href ? 'text-neutral cursor-text' : ''}`}
               >
                 {label}
               </Link>
