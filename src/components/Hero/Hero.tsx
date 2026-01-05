@@ -79,7 +79,7 @@ const Hero = () => {
             </div>
 
             {/* Floating Code Card Overlay */}
-            <div className="-bottom-30px absolute -right-20 z-20 w-[80%] transition-transform duration-700 ease-out will-change-transform group-hover:translate-x-4 group-hover:-translate-y-8 group-hover:rotate-3 md:-right-20 md:bottom-[-30px] md:w-[350px]">
+            <div className="-bottom-30px absolute -right-4 z-20 w-[80%] transition-transform duration-700 ease-out will-change-transform group-hover:translate-x-4 group-hover:-translate-y-8 group-hover:rotate-3 md:-right-20 md:bottom-[-30px] md:w-[350px]">
               <Image
                 src={HeroCodeCard}
                 alt="Code Snippet Card"
