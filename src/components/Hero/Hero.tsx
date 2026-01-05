@@ -1,48 +1,9 @@
 'use client'
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
-import useRotatingAnimation from '@/hooks/useRotatingAnimation'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
-import {
-  HeroDev,
-  HeroDevCyberpunk,
-  HeroDevNext,
-  HeroDevTech,
-} from '../../utils/images'
-import Ellipse from './Ellipse'
-
-// Configuração de transição
-const TRANSITION_DURATION = 400 // ms
+import { HeroCodeCard, HeroLaptop } from '../../utils/images'
 
 const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0)
-  const [isTransitioning, setIsTransitioning] = useState(false)
-  const [displayIndex, setDisplayIndex] = useState(0)
-
-  // Imagens otimizadas - começando com foto real
-  const images = [HeroDev, HeroDevTech, HeroDevNext, HeroDevCyberpunk]
-
-  // Preload da próxima imagem
-  const nextIndex = (currentImageIndex + 1) % images.length
-
-  // Controla a transição suave
-  useEffect(() => {
-    if (currentImageIndex !== displayIndex) {
-      setIsTransitioning(true)
-      const timer = setTimeout(() => {
-        setDisplayIndex(currentImageIndex)
-        setIsTransitioning(false)
-      }, TRANSITION_DURATION / 2)
-      return () => clearTimeout(timer)
-    }
-    return undefined
-  }, [currentImageIndex, displayIndex])
-
-  const ellipseRef = useRotatingAnimation({
-    onStep: () => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length)
-    },
-  })
   const role = useRoleSwitcher({
     roles: [
       'DESENVOLVEDOR FULL-STACK',
@@ -104,39 +65,29 @@ const Hero = () => {
         </div>
 
         <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
-          <div className="text-accent relative size-56 sm:size-60 md:size-[20rem] lg:size-[25.75rem]">
-            {/* Imagem atual com crossfade */}
-            <Image
-              src={images[displayIndex]}
-              fill={true}
-              priority={displayIndex === 0}
-              sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
-              alt="Joelson Lopes - Full Stack Developer"
-              className={`rounded-full object-contain p-8 transition-opacity ease-in-out ${
-                isTransitioning ? 'opacity-0' : 'opacity-100'
-              }`}
-              style={{ transitionDuration: `${TRANSITION_DURATION / 2}ms` }}
-            />
-            {/* Preload da próxima imagem (hidden) */}
-            <Image
-              src={images[nextIndex]}
-              fill={true}
-              priority={false}
-              sizes="(min-width: 1024px) 25.75rem, (min-width: 768px) 20rem, (min-width: 640px) 15rem, 14rem"
-              alt=""
-              aria-hidden="true"
-              className="pointer-events-none opacity-0"
-            />
-            {/* Ellipse com pulse durante transição */}
-            <Ellipse
-              ref={ellipseRef}
-              className={`absolute top-0 left-0 size-56 transition-all ease-out sm:size-60 md:size-[20rem] lg:size-[25.75rem] ${
-                isTransitioning
-                  ? 'scale-[1.02] drop-shadow-[0_0_15px_var(--color-accent)]'
-                  : 'scale-100'
-              }`}
-              style={{ transitionDuration: `${TRANSITION_DURATION}ms` }}
-            />
+          <div className="group relative flex w-full max-w-[500px] items-center justify-center">
+            {/* Laptop Base Image */}
+            <div className="relative z-10 w-full transition-transform duration-500 will-change-transform group-hover:scale-105">
+              <Image
+                src={HeroLaptop}
+                alt="Laptop with code"
+                width={600}
+                height={400}
+                priority
+                className="h-auto w-full object-contain drop-shadow-2xl"
+              />
+            </div>
+
+            {/* Floating Code Card Overlay */}
+            <div className="-bottom-30px absolute -right-20 z-20 w-[80%] transition-transform duration-700 ease-out will-change-transform group-hover:translate-x-4 group-hover:-translate-y-8 group-hover:rotate-3 md:-right-20 md:bottom-[-30px] md:w-[350px]">
+              <Image
+                src={HeroCodeCard}
+                alt="Code Snippet Card"
+                width={400}
+                height={260}
+                className="h-auto w-full rounded-lg object-contain drop-shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </div>
