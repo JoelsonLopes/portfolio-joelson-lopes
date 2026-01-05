@@ -31,9 +31,9 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
           >
             <div className="flex gap-8 lg:gap-24">
               {category.skills.map(({ name, icon }, idx) => (
-                <span
+                <div
                   key={idx}
-                  className="font-inter text-primary-content flex items-center text-xs lg:text-base"
+                  className="font-inter text-primary-content bg-secondary/10 hover:border-accent/50 hover:shadow-neon flex items-center rounded-full border border-transparent px-4 py-2 text-xs transition-all duration-300 hover:scale-105 lg:text-base"
                 >
                   {typeof icon === 'function' ||
                   (typeof icon === 'object' && 'type' in (icon as object)) ? (
@@ -41,12 +41,12 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                     <icon.type
                       // @ts-expect-error - Icon props mismatch
                       {...icon.props}
-                      className="mx-2 size-11 lg:size-14"
+                      className="mr-2 size-6 lg:size-8"
                     />
                   ) : typeof icon === 'function' ? (
                     // For functional components
                     // @ts-expect-error - Icon component type mismatch
-                    <icon className="mx-2 size-11 lg:size-14" />
+                    <icon className="mr-2 size-6 lg:size-8" />
                   ) : (
                     // For StaticImageData or string
                     <Image
@@ -54,11 +54,13 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
                         icon as string | import('next/image').StaticImageData
                       }
                       alt={name}
-                      className="mx-2 size-11 lg:size-14"
+                      width={32}
+                      height={32}
+                      className="mr-2 size-6 rounded-sm object-contain lg:size-8"
                     />
                   )}
                   {name}
-                </span>
+                </div>
               ))}
             </div>
           </MarqueeWrapper>

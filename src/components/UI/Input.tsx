@@ -17,7 +17,7 @@ const Input: FC<InputProps> = ({ type = 'text', id, label, ...props }) => {
         id={id}
         type={type}
         {...props}
-        className="border-border focus:ring-accent text-neutral w-full rounded-lg border p-[10px] placeholder:font-thin focus:ring-2 focus:outline-none"
+        className="border-border bg-secondary/10 text-neutral placeholder:text-neutral/40 focus:border-accent focus:shadow-neon w-full rounded-lg border p-[10px] transition-all duration-300 focus:outline-none"
       />
     </div>
   )

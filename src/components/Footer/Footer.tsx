@@ -44,12 +44,15 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-4">
           <ul className="flex flex-col gap-4">
             {socials.map((item, index) => (
-              <li key={index} className="cursor-pointer bg-transparent">
+              <li
+                key={index}
+                className="bg-secondary/10 hover:shadow-neon hover:border-accent cursor-pointer rounded-full border border-transparent transition-all duration-300 hover:scale-110"
+              >
                 <a
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-neutral transition-color hover:text-neutral/50 h-full w-full duration-300"
+                  className="text-neutral flex size-10 items-center justify-center transition-colors duration-300"
                 >
                   {item.icon}
                 </a>
