@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardTypes> = ({
   technologies,
 }) => {
   return (
-    <div className="bg-secondary border-border flex flex-col items-center rounded-[14px] border p-5">
+    <div className="bg-secondary border-border hover-card-neon flex flex-col items-center rounded-[14px] border p-5">
       <Image src={icon} alt={title} className="my-1 size-14" />
       <h5 className="text-accent mt-2 mb-2 text-center text-base font-semibold">
         {title}
