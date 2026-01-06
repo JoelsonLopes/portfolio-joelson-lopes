@@ -42,7 +42,7 @@ const Footer = () => {
 
       <div className="relative z-20 flex flex-col-reverse gap-20 md:grid md:grid-cols-2 md:gap-12">
         <div className="grid grid-cols-2 gap-4">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col items-start gap-4">
             {socials.map((item, index) => (
               <li
                 key={index}
