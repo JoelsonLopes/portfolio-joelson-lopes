@@ -2,6 +2,7 @@
 import { SkillCategory } from '@/lib/types'
 import dynamic from 'next/dynamic'
 import Image from 'next/image'
+import { FadeIn, SlideIn } from '../animations/MotionWrappers'
 
 const MarqueeWrapper = dynamic(() => import('../Marquee/MarqueeWrapper'), {
   ssr: false,
@@ -13,13 +14,15 @@ type SkillsProps = {
 
 const Skills: React.FC<SkillsProps> = ({ skills }) => {
   return (
-    <div className="my-16 flex flex-col gap-8">
-      <div className="text-center">
-        <p className="text-neutral text-lg">
-          Foco atual: stack React/Next.js com Node.js e TypeScript, usando IA
-          para acelerar entrega com qualidade.
-        </p>
-      </div>
+    <FadeIn className="my-16 flex flex-col gap-8">
+      <SlideIn direction="up">
+        <div className="text-center">
+          <p className="text-neutral text-lg">
+            Foco atual: stack React/Next.js com Node.js e TypeScript, usando IA
+            para acelerar entrega com qualidade.
+          </p>
+        </div>
+      </SlideIn>
       {skills.map((category, index) => (
         <div key={index} className="flex flex-col gap-4">
           <h3 className="text-accent text-center text-xl font-semibold">
@@ -66,7 +69,7 @@ const Skills: React.FC<SkillsProps> = ({ skills }) => {
           </MarqueeWrapper>
         </div>
       ))}
-    </div>
+    </FadeIn>
   )
 }
 

@@ -2,6 +2,12 @@
 import useRoleSwitcher from '@/hooks/useRoleSwitcher'
 import Image from 'next/image'
 import { HeroCodeCard, HeroLaptop } from '../../utils/images'
+import {
+  FadeIn,
+  ScaleUp,
+  SlideIn,
+  StaggerContainer,
+} from '../animations/MotionWrappers'
 
 const Hero = () => {
   const role = useRoleSwitcher({
@@ -15,56 +21,73 @@ const Hero = () => {
   return (
     <section className="bg-primary bg-small-glow bg-small-glow-position md:bg-large-glow-position lg:bg-large-glow min-h-[calc(dvh-4rem)] bg-no-repeat">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-4 px-4 pt-12 pb-10 md:grid-cols-2 lg:p-4">
-        <div className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
-          <h1>
-            <span className="text-neutral mb-2 block text-3xl font-bold">
-              Olá - Eu sou Joelson Lopes
-            </span>
-            <span className="text-accent block text-[1.75rem] font-bold">
-              {role}
-            </span>
-          </h1>
+        <StaggerContainer className="flex min-h-48 flex-col justify-between lg:min-h-56 lg:max-w-[33.75rem]">
+          <SlideIn direction="up">
+            <h1>
+              <span className="text-neutral mb-2 block text-3xl font-bold">
+                Olá - Eu sou Joelson Lopes
+              </span>
+              <span className="text-accent block text-[1.75rem] font-bold">
+                {role}
+              </span>
+            </h1>
+          </SlideIn>
 
-          <h2 className="text-neutral mt-3">
-            Foco atual em aplicações web com React/Next.js, Node.js e
-            TypeScript, utilizando IA para ganhar velocidade sem perder
-            qualidade.
-          </h2>
+          <SlideIn direction="up" delay={0.1}>
+            <h2 className="text-neutral mt-3">
+              Foco atual em aplicações web com React/Next.js, Node.js e
+              TypeScript, utilizando IA para ganhar velocidade sem perder
+              qualidade.
+            </h2>
+          </SlideIn>
 
-          <p className="text-neutral/80 mt-2 text-sm font-medium">
-            +15 projetos entregues para empresas de saúde e distribuição
-            automotiva
-          </p>
+          <SlideIn direction="up" delay={0.2}>
+            <p className="text-neutral/80 mt-2 text-sm font-medium">
+              +15 projetos entregues para empresas de saúde e distribuição
+              automotiva
+            </p>
+          </SlideIn>
 
-          <div className="mt-6 flex flex-wrap gap-6">
-            <a
-              href="#contact"
-              aria-label="Entre em contato"
-              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
-            >
-              Entre em Contato
-            </a>
-            <a
-              href="https://www.linkedin.com/in/joelsonlopes/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ver Perfil no LinkedIn"
-              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
-            >
-              Perfil LinkedIn
-            </a>
-            <a
-              href="/assets/CV JOELSON LOPES.pdf"
-              download="CV-Joelson-Lopes.pdf"
-              aria-label="Baixar Currículo"
-              className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
-            >
-              Download CV
-            </a>
-          </div>
-        </div>
+          <FadeIn delay={0.3}>
+            <div className="mt-6 flex flex-wrap gap-6">
+              <ScaleUp>
+                <a
+                  href="#contact"
+                  aria-label="Entre em contato"
+                  className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
+                >
+                  Entre em Contato
+                </a>
+              </ScaleUp>
+              <ScaleUp delay={0.1}>
+                <a
+                  href="https://www.linkedin.com/in/joelsonlopes/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ver Perfil no LinkedIn"
+                  className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
+                >
+                  Perfil LinkedIn
+                </a>
+              </ScaleUp>
+              <ScaleUp delay={0.2}>
+                <a
+                  href="/assets/CV JOELSON LOPES.pdf"
+                  download="CV-Joelson-Lopes.pdf"
+                  aria-label="Baixar Currículo"
+                  className="text-neutral bg-secondary hover:bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm transition-colors duration-300 hover:text-[#00071E]"
+                >
+                  Download CV
+                </a>
+              </ScaleUp>
+            </div>
+          </FadeIn>
+        </StaggerContainer>
 
-        <div className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]">
+        <FadeIn
+          delay={0.4}
+          className="flex min-h-[18.75rem] items-center justify-center lg:min-h-[35rem]"
+        >
           <div className="group relative flex w-full max-w-[500px] items-center justify-center">
             {/* Laptop Base Image */}
             <div className="relative z-10 w-full transition-transform duration-500 will-change-transform group-hover:scale-105">
@@ -89,7 +112,7 @@ const Hero = () => {
               />
             </div>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   )
